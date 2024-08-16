@@ -5,20 +5,24 @@ import ServicesPage from "./pages/ServicesPage/ServicesPage";
 import ContactUsPage from "./pages/ContactPage/ContactPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SignUpPage from "./pages/SignUpPage/SignUpPage";
+import NavBar from "./components/HomePageComponents/NavBar/NavBar";
 import './App.css'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<HomePage />} />
-        <Route path="about" element={<AboutUsPage />} />
-        <Route path="services" element={<ServicesPage />} />
-        <Route path="contact" element={<ContactUsPage />} />
-        <Route path="login" element={<LoginPage />} />
-        <Route path="signup" element={<SignUpPage />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="app-wrapper">
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="about" element={<AboutUsPage />} />
+          <Route path="services" element={<ServicesPage />} />
+          <Route path="contact" element={<ContactUsPage />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="signup" element={<SignUpPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 

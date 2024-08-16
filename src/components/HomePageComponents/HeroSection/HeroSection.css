@@ -1,8 +1,92 @@
 .hero-section-container {
-    background-image: url('../../../assets/hero-pic.png');
+    background-image: url('../../../assets/hero-pic-2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 1024px;
     width: 100%;
+}
+
+.hero-section-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-left-section {
+    position: absolute;
+    top: 112px;
+    left: 88px;
+}
+
+.hero-left-text1 {
+    font-size: 110px;
+    font-weight: 700;
+    line-height: 170.62px;
+    color: #F2F2F2;
+    max-width: 865px;
+    margin: 0;
+}
+
+.hero-left-text2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.32px;
+    max-width: 461px;
+    margin: 0;
+    color: #ffffff;
+    font-family: Outfit;
+}
+
+.hero-left-text3 {
+    font-size: 24px;
+    line-height: 30.24px;
+    color: #FFFFFF;
+    font-family: Outfit;
+    max-width: 461px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.hero-left-button {
+    height: 54px;
+    width: 143px;
+    border-radius: 10px;
+    background-color: #6119BE;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    color: #F2F2F2;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.16px;
+    white-space: nowrap;
+    border: none;
+    margin-top: 26px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.hero-left-button:hover {
+    transform: scale(0.9);
+}
+
+.hero-right-section {
+    max-width: 389px;
+    position: absolute;
+    top: 642px;
+    right: 62px;
+}
+
+.hero-right-text1 {
+    font-size: 24px;
+    color: #FFF;
+    font-family: Outfit;
+    line-height: normal;
+}
+
+.hero-right-text-2 {
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
