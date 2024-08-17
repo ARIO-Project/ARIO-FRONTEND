@@ -1,3 +1,4 @@
+import React from 'react'
 import './AboutUsPage.css'
 
 const AboutUsPage = () => {

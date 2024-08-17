@@ -1,3 +1,4 @@
+import React from 'react'
 import HeroSection from "../../components/HomePageComponents/HeroSection/HeroSection";
 import './HomePage.css'
 

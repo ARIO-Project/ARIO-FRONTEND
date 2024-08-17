@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { navLinks1, navLinks2 } from "../../../data.js";
@@ -11,6 +12,8 @@ const NavBar = () => {
         window.scrollY > 50 ? setNavScrolling(true) : setNavScrolling(false)
       })
     }, [])
+
+    console.log(NavScrolling)
     
 
   return (

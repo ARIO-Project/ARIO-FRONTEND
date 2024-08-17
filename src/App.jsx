@@ -1,3 +1,4 @@
+import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
@@ -7,6 +8,8 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import SignUpPage from "./pages/SignUpPage/SignUpPage";
 import NavBar from "./components/HomePageComponents/NavBar/NavBar";
 import './App.css'
+
+
 
 const App = () => {
   return (
