@@ -1,9 +1,12 @@
 import React from 'react'
+import Footer from "../../components/Footer/Footer";
 import './AboutUsPage.css'
 
 const AboutUsPage = () => {
   return (
-    <div>AboutUsPage</div>
+    <div>
+      <Footer />
+    </div>
   )
 }
 

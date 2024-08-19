@@ -1,0 +1,256 @@
+.homepage-body {
+    padding-left: 88px;
+    padding-right: 88px;
+    margin-top: 88px;
+}
+.home-works-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-works-text1 {
+    font-family: Outfit;
+    color: #0D0D0D;
+    font-size: 40px;
+    line-height: 50.4px;
+    font-weight: 700;
+    margin: 0;
+}
+.home-works-text2 {
+    color: #2F489E;
+    font-family: Outfit;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.32px;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.home-works-text3 {
+    color: #5D5D5D;
+    font-family: Outfit;
+    font-size: 24px;
+    line-height: 30.24px;
+    margin: 0;
+    text-align: center;
+}
+.home-works-image-wrapper {
+    margin-top: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.home-works-image {
+    height: 337px;
+}
+.home-works-button {
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #6119BE;
+    color: #F2F2F2;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Outfit;
+    font-weight: 700;
+    line-height: 20.16px;
+    font-size: 16px;
+    transition: transform 0.25s ease;
+}
+.home-works-button:hover {
+    transform: scale(0.9);
+}
+.how-it-works-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 63px;
+}
+.hiw-text1 {
+    font-family: Outfit;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60.48px;
+    color: #0D0D0D;
+}
+.hiw-image1 {
+    width: 739px;
+}
+.hiw-steps-image-container {
+    position: relative;
+    height: fit-content;
+    margin-top: 20px;
+}
+.hiw-steps-image {
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+}
+.hiw-steps-image-text-wrapper {
+    position: absolute;
+    top: 144.5px;
+    left: 53px;
+    color: #FFFFFF;
+    font-family: Outfit;
+    width: 654px;
+}
+.hiw-steps-image-text-wrapper2 {
+    position: absolute;
+    top: 154px;
+    right: 16px;
+    color: #FFFFFF;
+    font-family: Outfit;
+    width: 654px;
+}
+.hiw-steps-image-text-wrapper3 {
+    position: absolute;
+    top: 157px;
+    left: 44px;
+    color: #FFFFFF;
+    font-family: Outfit;
+    width: 654px;
+}
+.hiw-steps-image-text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40.32px;
+}
+.hiw-steps-image-text2 {
+    font-size: 20px;
+    line-height: 25.2px;
+    margin: 0;
+}
+.hiw-steps-image-text3 {
+    font-size: 20px;
+    line-height: 25.2px;
+    margin: 0;
+    margin-top: 10px;
+}
+.features-container {
+    margin-top: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.features-image-container {
+    margin-top: 20px;
+}
+.features-image {
+    height: 555px;
+    margin-bottom: 16px;
+}
+.features-image-text {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30.24px;
+    color: #000000;
+    margin: 0;
+}
+.features-image-text2 {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30.24px;
+    color: #000000;
+    margin: 0;
+    margin-top: 20px;
+}
+.features-image2 {
+    height: 555px;
+    margin-top: 22px;
+}
+.features-image-container3 {
+    align-self: flex-end;
+}
+.features-image-text3 {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30.24px;
+    color: #000000;
+    margin: 0;
+}
+.features-image3 {
+    height: 440px;
+    margin-top: 20px;
+}
+.reviews-container {
+    margin-top: 163px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reviews-card-wrapper {
+    margin-top: 49px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 31px;
+}
+.review-card {
+    background-color: #C6B1FF;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    padding: 29px 32px;
+    border-radius: 20px;
+    height: 374px;
+}
+.review-card-icon {
+    height: 59px;
+}
+.review-card-content {
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.16px;
+    color: #000000;
+    max-width: 353px;
+}
+.review-card-section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+}
+.review-card-section2-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.review-card-section2-left-image {
+    height: 70px;
+}
+.review-card-section2-left-text1 {
+    font-family: Outfit;
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: #000000;
+}
+.review-card-section2-left-text2 {
+    font-family: Outfit;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: #4F4F4F;
+    margin: 0;
+}
+.review-card-section2-right-image {
+    height: 24px;
+}

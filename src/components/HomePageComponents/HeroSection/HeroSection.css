@@ -5,6 +5,8 @@
     background-repeat: no-repeat;
     height: 1024px;
     width: 100%;
+    max-width: 100%;
+    
 }
 
 .hero-section-wrapper {

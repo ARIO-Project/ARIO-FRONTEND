@@ -1,9 +1,12 @@
 import React from 'react'
+import Footer from "../../components/Footer/Footer";
 import './ServicesPage.css'
 
 const ServicesPage = () => {
   return (
-    <div>ServicesPage</div>
+    <div>
+      <Footer />
+    </div>
   )
 }
 
