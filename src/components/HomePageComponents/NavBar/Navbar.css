@@ -37,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 68px;
+    gap: 41px;
 }
 
 .nav-text-cont {
@@ -46,7 +46,7 @@
 }
 
 .nav-text {
-    color: #0D0D0D;
+    color: #6119BE;
     text-decoration: none;
     cursor: pointer;
     transition: color 0.2s;
@@ -56,18 +56,303 @@
     color: #F2F2F2;
 }
 
+.nav-text2 {
+    color: #F2F2F2;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.nav-text2:hover {
+    color: #6119BE;
+}
+
 .nav-logo {
+    all: unset;
     color: #F2F2F2;
     font-weight: 700;
     font-size: 40PX;
     line-height: 50.4px;
     font-family: Playfair Display;
-    padding-left: 200px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.nav-logo2 {
+    all: unset;
+    color: #6119BE;
+    font-weight: 700;
+    font-size: 40PX;
+    line-height: 50.4px;
+    font-family: Playfair Display;
+    margin-left: 200px;
+    cursor: pointer;
 }
 
 .nav-link2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 61px;
+    gap: 41px;
+    margin-left: 20px;
 }
+
+.nav-button {
+    all: unset;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 500;
+    color: #F2F2F2;
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #6119BE;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.nav-button2 {
+    all: unset;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 500;
+    color: #6119BE;
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #6119BE;
+    cursor: pointer;
+    transition: color 0.25s ease, border-color 0.25s ease;
+    white-space: nowrap;
+}
+.nav-button2:hover {
+    color: #F2F2F2;
+    border-color: #F2F2F2;
+}
+.nav-icon {
+    display: none;
+}
+.nav-icon2 {
+    display: none;
+}
+.nav-overlay {
+    display: none;
+}
+
+
+  /**! SMALL LAPTOP SCREENS DO NOT TOUCH */
+@media screen and (min-width: 1025px) and (max-width: 1103px) {
+    .nav-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .nav-container-dark {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .nav-link2 {
+        margin-left: 40px;
+    }
+  }
+
+  /**! BIG TABS AND IPAD PRO DO NOT TOUCH */
+@media screen and (min-width: 933px) and (max-width: 1024px) {
+    .nav-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .nav-container-dark {
+        padding-left: 30px;
+        padding-right: 30px;    
+    }
+   
+    .nav-link1 {
+        gap: 30px;
+    }
+    .nav-link2 {
+        gap: 30px;
+    }
+  }
+
+  /**! IPAD AIR, MINI AND SMALL TABS DO NOT TOUCH */
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .nav-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .nav-container-dark {
+        padding-left: 30px;
+        padding-right: 30px;    
+    }
+   
+    .nav-link1 {
+        display: none;
+    }
+    .nav-link2 {
+        display: none;
+    }
+    .nav-logo {
+        margin-left: 0px;
+    }
+    .nav-logo2 {
+        margin-left: 0px;
+    }
+    .nav-icon {
+        display: block;
+        height: 40px;
+        width: 40px;
+        color: #F2F2F2;
+        cursor: pointer;
+    }
+    .nav-icon2 {
+        display: block;
+        color: #6119BE;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+    .nav-overlay {
+        display: block;
+        padding: 18px 30px;
+        background-color: #07010F;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px; 
+        bottom: 0px;
+        z-index: 200;
+        height: 100vh;
+    }
+    .nav-overlay-logo-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-overlay-link1 {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 50px;
+        height: 90%;
+        position: relative;
+    }
+    .nav-overlay-text {
+        list-style: none;
+        white-space: nowrap;
+        background-color: #6119BE30;
+        padding: 10px;
+        border-radius: 6px;
+        color: #F2F2F2;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .nav-overlay-signup-button {
+        all: unset;
+        background-color: #6119BE;
+        padding: 10px;
+        border-radius: 6px;
+        color: #F2F2F2;
+        font-size: 25px;
+        position: absolute;
+        bottom: 60px;
+        left: 18px;
+        right: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+  }
+
+  /**! MOBILE PHONE SCREENS DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+    .nav-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+    .nav-container-dark {
+        padding-left: 20px;
+        padding-right: 20px;    
+    }
+   
+    .nav-link1 {
+        display: none;
+    }
+    .nav-link2 {
+        display: none;
+    }
+    .nav-logo {
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .nav-logo2 {
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .nav-icon {
+        display: block;
+        height: 30px;
+        width: 30px;
+        color: #F2F2F2;
+    }
+    .nav-icon2 {
+        display: block;
+        color: #6119BE;
+        height: 30px;
+        width: 30px;
+    }
+    .nav-overlay {
+        display: block;
+        padding: 15px 20px;
+        background-color: #07010F;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px; 
+        bottom: 0px;
+        height: 100vh;
+    }
+    .nav-overlay-logo-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-overlay-link1 {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 50px;
+        height: 90%;
+        position: relative;
+    }
+    .nav-overlay-text {
+        list-style: none;
+        white-space: nowrap;
+        background-color: #6119BE30;
+        padding: 10px;
+        border-radius: 6px;
+        color: #F2F2F2;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    .nav-overlay-signup-button {
+        all: unset;
+        background-color: #6119BE;
+        padding: 10px;
+        border-radius: 6px;
+        color: #F2F2F2;
+        font-size: 15px;
+        position: absolute;
+        bottom: 60px;
+        left: 18px;
+        right: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+  }

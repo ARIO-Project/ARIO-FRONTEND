@@ -6,9 +6,6 @@ import WorksImage5 from "./assets/works-image5.png";
 import WorksImage6 from "./assets/works-image6.png";
 import WorksImage7 from "./assets/works-image7.png";
 import WorksImage8 from "./assets/works-image8.png";
-import Step1 from "./assets/step1.png";
-import Step2 from "./assets/step2.png";
-import Step3 from "./assets/step3.png";
 import ReviewIcon from "./assets/review-icon.png";
 import ReviewPic1 from "./assets/review-pic1.png";
 import ReviewPic2 from "./assets/review-pic2.png";
@@ -17,6 +14,12 @@ import ReviewPic4 from "./assets/review-pic4.png";
 import ReviewPic5 from "./assets/review-pic5.png";
 import ReviewPic6 from "./assets/review-pic6.png";
 import StarIcon from "./assets/star.png";
+import HwAsset1 from "./assets/hw-asset1.png";
+import HwAsset2 from "./assets/hw-asset2.png";
+import HwAsset3 from "./assets/hw-asset3.png";
+import FeaturesImage1 from "./assets/features-pic1.png";
+import FeaturesImage2 from "./assets/features-pic2.png";
+import FeaturesImage3 from "./assets/feautures-pic3.png";
 
 export const navLinks1 = [
     {
@@ -24,27 +27,19 @@ export const navLinks1 = [
         path: "/"
     },
     {
-        name: "About",
-        path: "/about"
+        name: "Features",
+        path: "/#homepage-body-section4"
     },
 ];
 
 export const navLinks2 = [
     {
-        name: "Services",
-        path: "/services"
-    },
-    {
-        name: "Contact",
-        path: "/contact"
+        name: "Our Works",
+        path: "/#homepage-body-section5"
     },
     {
         name: "Login",
         path: "/login"
-    },
-    {
-        name: "Sign Up",
-        path: "/signUp"
     },
 ];
 
@@ -78,19 +73,19 @@ export const homeWorksPics = [
 export const howItWorksSteps = [
     {
         step: "Step 1: Design Your Outfit",
-        image: Step1,
+        image: HwAsset1,
         content1: "Explore the Catalog: Browse through a curated selection of traditional Nigerian clothing.",
         content2: "Customize Your Choice: Choose your preferred styles, fabrics, and colors. Provide your measurements for a perfect fit."
     },
     {
         step: "Step 2: Place Your Order",
-        image: Step2,
+        image: HwAsset2,
         content1: "Add to Cart: Once satisfied with your design, add the item to your cart.",
         content2: "Checkout: Provide your shipping details and make a secure payment to complete your order"
     },
     {
         step: "Step 3: Receive Your Custom Wear",
-        image: Step3,
+        image: HwAsset3,
         content1: "Order Tracking: Stay updated with real-time tracking of your order status.",
         content2: "Delivery: Your custom-made outfit is delivered to your doorstep, ready to wear and impress."
     }
@@ -144,5 +139,20 @@ export const reviews = [
         content: "I was skeptical about ordering custom clothing online, but ARIO exceeded all my expectations. The outfit was even better than I imagined!",
         star: StarIcon,
         location: "Ogun"
+    }
+]
+
+export const features = [
+    {
+        image: FeaturesImage1,
+        title: "Custom-Made Clothing"
+    },
+    {
+        image: FeaturesImage2,
+        title: "User Experience and Support"
+    },
+    {
+        image: FeaturesImage3,
+        title: "Community and Culture"
     }
 ]

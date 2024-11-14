@@ -1,55 +1,73 @@
 .hero-section-container {
-    background-image: url('../../../assets/hero-pic-2.png');
+    background-image: url('../../../assets/hero-pic1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 1024px;
+    height: 1440px;
     width: 100%;
-    max-width: 100%;
-    
+    position: relative;
+    margin-bottom: 100px;
 }
 
 .hero-section-wrapper {
     width: 100%;
-    height: 100%;
-}
-
-.hero-left-section {
+    background-image: url('../../../assets/hero-pic-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    height: 70%;
     position: absolute;
-    top: 112px;
-    left: 88px;
+    top: 124px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-left-text1 {
-    font-size: 110px;
+.hero-section-text1 {
+    font-size: 128px;
     font-weight: 700;
-    line-height: 170.62px;
+    line-height: 128px;
+    text-align: center;
     color: #F2F2F2;
-    max-width: 865px;
-    margin: 0;
+    max-width: 901px;
+    font-family: 'Playfair Display';
+    margin: 0px;
 }
 
-.hero-left-text2 {
+.hero-section-text1-span {
+    color: #3D6AD3;
+    font-size: 194px;
+    line-height: 194px;
+    margin: 0px;
+}
+
+.hero-section-text2 {
+    font-family: 'Lato';
     font-size: 32px;
+    line-height: 38.4px;
+    color: #F2F2F2;
+    text-align: center;
+    max-width: 461px;
     font-weight: 700;
-    line-height: 40.32px;
-    max-width: 461px;
-    margin: 0;
-    color: #ffffff;
-    font-family: Outfit;
+    margin: 0px;
+    margin-top: 15px;
 }
 
-.hero-left-text3 {
+.hero-section-text3 {
+    font-family: 'Lato';
     font-size: 24px;
-    line-height: 30.24px;
+    line-height: 28.8px;
+    font-weight: 400;
     color: #FFFFFF;
-    font-family: Outfit;
     max-width: 461px;
-    margin: 0;
-    margin-top: 10px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 15px;
 }
 
-.hero-left-button {
+.hero-section-button {
     height: 54px;
     width: 143px;
     border-radius: 10px;
@@ -66,29 +84,77 @@
     transition: transform 0.2s ease;
 }
 
-.hero-left-button:hover {
+.hero-section-button:hover {
     transform: scale(0.9);
 }
 
-.hero-right-section {
-    max-width: 389px;
-    position: absolute;
-    top: 642px;
-    right: 62px;
-}
+/**! BIG TABS AND IPAD PRO DO NOT TOUCH */
+@media screen and (min-width: 933px) and (max-width: 1024px) {
+    .hero-section-container {
+        height: 840px;
+        margin-bottom: 50px;
+    }
+    .hero-section-wrapper {
+        height: 80%;
+    }
+    .hero-section-text1 {
+        font-size: 90px;
+        line-height: 90px;
+    }
+    
+  }
 
-.hero-right-text1 {
-    font-size: 24px;
-    color: #FFF;
-    font-family: Outfit;
-    line-height: normal;
-}
+  /**! IPAD AIR, MINI AND SMALL TABS DO NOT TOUCH */
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .hero-section-container {
+        height: 840px;
+        margin-bottom: 50px;
+    }
+    .hero-section-wrapper {
+        height: 80%;
+    }
+    .hero-section-text1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .hero-section-text2 {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+  }
 
-.hero-right-text-2 {
-    color: #FFF;
-    font-family: Outfit;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+  /**! MOBILE PHONE SCREENS DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+    .hero-section-container {
+        height: 840px;
+        margin-bottom: 50px;
+    }
+    .hero-section-wrapper {
+        height: 80%;
+    }
+    .hero-section-text1 {
+        font-size: 60px;
+        line-height: 90px;
+        margin-bottom: 70px
+    }
+    .hero-section-text1-span {
+        font-size: 150px;
+        line-height: 50px;
+    }
+    .hero-section-text2 {
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-top: 0px
+    }
+    .hero-section-text3 {
+        font-size: 16px;
+        line-height: 21.6px;
+        max-width: 250px;
+    }
+    .hero-section-button {
+        font-size: 14px;    
+        height: 50px;
+        width: 123px;
+    }
+  }
+

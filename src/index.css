@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Playfair Display, Outfit, Quattrocento, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Playfair Display, Lato, Outfit, Quattrocento, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -15,11 +15,54 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 body {
   margin: 0;
   min-width: 320px;
-  min-height: 400vh;
-  background-color: #f2f2f2;
+  background-color: #07010F;
+  overflow-x: hidden;
+}
+
+/**! MEDIUM LAPTOP SCREENS DO NOT TOUCH */
+@media screen and (min-width: 1104px) and (max-width: 1388px) {
+  body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/**! SMALL LAPTOP SCREENS DO NOT TOUCH */
+@media screen and (min-width: 1025px) and (max-width: 1103px) {
+  body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/**! BIG TABS AND IPAD PRO DO NOT TOUCH */
+@media screen and (min-width: 933px) and (max-width: 1024px) {
+  body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/**! IPAD AIR, MINI AND SMALL TABS DO NOT TOUCH */
+@media screen and (min-width: 768px) and (max-width: 932px) {
+  body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/**! MOBILE PHONE SCREENS DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+  body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }

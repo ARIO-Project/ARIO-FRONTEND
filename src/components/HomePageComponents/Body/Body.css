@@ -1,198 +1,233 @@
 .homepage-body {
-    padding-left: 88px;
-    padding-right: 88px;
-    margin-top: 88px;
+    padding-left: 102px;
+    padding-right: 102px;
 }
-.home-works-container {
+.homepage-body-section1 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.home-works-text1 {
-    font-family: Outfit;
-    color: #0D0D0D;
-    font-size: 40px;
-    line-height: 50.4px;
-    font-weight: 700;
-    margin: 0;
+
+.homepage-body-section1-text-wrapper {
+    max-width: 389px;
 }
-.home-works-text2 {
-    color: #2F489E;
-    font-family: Outfit;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 40.32px;
-    margin: 0;
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-.home-works-text3 {
-    color: #5D5D5D;
-    font-family: Outfit;
+.homepage-body-section1-text-title {
+    font-family: "Lato";
     font-size: 24px;
-    line-height: 30.24px;
-    margin: 0;
+    line-height: 28.8px;
     text-align: center;
-}
-.home-works-image-wrapper {
-    margin-top: 23px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.home-works-image {
-    height: 337px;
-}
-.home-works-button {
-    margin-top: 20px;
-    text-decoration: none;
-    background-color: #6119BE;
-    color: #F2F2F2;
-    padding: 15px;
-    border-radius: 10px;
-    font-family: Outfit;
-    font-weight: 700;
-    line-height: 20.16px;
-    font-size: 16px;
-    transition: transform 0.25s ease;
-}
-.home-works-button:hover {
-    transform: scale(0.9);
-}
-.how-it-works-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 63px;
-}
-.hiw-text1 {
-    font-family: Outfit;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 60.48px;
-    color: #0D0D0D;
-}
-.hiw-image1 {
-    width: 739px;
-}
-.hiw-steps-image-container {
-    position: relative;
-    height: fit-content;
-    margin-top: 20px;
-}
-.hiw-steps-image {
-    width: 100%;
-    max-width: 100%; 
-    height: auto; 
-}
-.hiw-steps-image-text-wrapper {
-    position: absolute;
-    top: 144.5px;
-    left: 53px;
     color: #FFFFFF;
-    font-family: Outfit;
-    width: 654px;
+    margin: 0px;
+    font-weight: 400;
 }
-.hiw-steps-image-text-wrapper2 {
-    position: absolute;
-    top: 154px;
-    right: 16px;
-    color: #FFFFFF;
-    font-family: Outfit;
-    width: 654px;
-}
-.hiw-steps-image-text-wrapper3 {
-    position: absolute;
-    top: 157px;
-    left: 44px;
-    color: #FFFFFF;
-    font-family: Outfit;
-    width: 654px;
-}
-.hiw-steps-image-text {
-    font-weight: 700;
+
+.homepage-body-section1-text-title-span {
+    color: #6119BE;
     font-size: 32px;
-    line-height: 40.32px;
+    line-height: 38.4px;   
 }
-.hiw-steps-image-text2 {
-    font-size: 20px;
-    line-height: 25.2px;
-    margin: 0;
+
+.homepage-body-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 62px;
 }
-.hiw-steps-image-text3 {
-    font-size: 20px;
-    line-height: 25.2px;
-    margin: 0;
+
+.homepage-body-section2-text-title {
+    font-family: "Lato";
+    font-size: 36px;
+    line-height: 43.2px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.homepage-body-section2-image {
+    width: 739px;
+    height: 33px;
     margin-top: 10px;
 }
-.features-container {
-    margin-top: 63px;
+
+.homepage-body-section2-assets-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.homepage-body-section2-asset {
+    width: 323px;
+    height: 397.54px;
+}
+
+.homepage-body-section3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 358.46px
 }
-.features-wrapper {
+.homepage-body-section3-image-wrapper {
     display: flex;
+    gap: 26.27px;
     flex-wrap: wrap;
-    gap: 7px;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.homepage-body-section3-asset {
+    width: 365px;
+    height: 402.4px;
+}
+.homepage-body-section3-button-wrapper {
+    display: flex;
+    gap: 13px;
+    margin-top: 48px;
+}
+.homepage-body-section3-button {
+    all: unset;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #6119BE;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 700;   
+    color: #F2F2F2;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+.homepage-body-section3-button:hover {
+    background-color: transparent;
+    border: 1px solid #6119BE;
+    color: #6119BE;
+}
+.homepage-body-section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 93px;
+}
+.homepage-body-section4-text-wrapper {
+    max-width: 389px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.homepage-body-section4-text-title {
+    font-family: "Lato";
+    font-size: 36px;
+    line-height: 43.2px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.homepage-body-section4-image {
+    width: 739px;
+    height: 33px;
+    margin-top: 10px;
+}
+.homepage-body-section4-assets-container {
+    display: flex;
+    gap: 15.25px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-.features-image-container {
     margin-top: 20px;
 }
-.features-image {
-    height: 555px;
-    margin-bottom: 16px;
+.homepage-body-section4-asset-wrapper {
 }
-.features-image-text {
-    font-family: Outfit;
+.homepage-body-section4-asset {
+    width: 394px;
+    height: 588px;
+}
+.homepage-body-section4-asset-title {
+    margin: 0px;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 30.24px;
-    color: #000000;
-    margin: 0;
+    font-size: 22.02px;
+    line-height: 26.43px;
+    font-family: "Lato";
+    color: #FFFFFF;
+    margin-top: 12.7px;
 }
-.features-image-text2 {
-    font-family: Outfit;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30.24px;
-    color: #000000;
-    margin: 0;
-    margin-top: 20px;
+.homepage-body-section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 303.45px;
+    flex-wrap: wrap;
+    gap: 157px;
 }
-.features-image2 {
-    height: 555px;
-    margin-top: 22px;
+.homepage-body-section5-left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 31px;   
 }
-.features-image-container3 {
-    align-self: flex-end;
+.homepage-body-section5-left-text1 {
+    margin: 0px;
+    font-family: "Lato";
+    font-size: 64px;
+    line-height: 76.8px;
+    color: #F6F2FF;
+    font-weight: 700;
+    text-align: center;
 }
-.features-image-text3 {
-    font-family: Outfit;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30.24px;
-    color: #000000;
-    margin: 0;
+.homepage-body-section5-left-text2 {
+    margin: 0px;
+    font-family: "Lato";
+    font-size: 32px;
+    line-height: 38.4px;
+    text-align: center;
+    color: #2F489E;
+    font-weight: 600
 }
-.features-image3 {
-    height: 440px;
-    margin-top: 20px;
+.homepage-body-section5-right-container {
+    width: 593px;
+}
+.homepage-body-section5-right-text {
+    width: 100%;
+    font-family: "Lato";
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 400;
+    color: #D1D1D1;
+    text-align: center;
 }
 .reviews-container {
-    margin-top: 163px;
+    margin-top: 284px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.reviews-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.reviews-text1 {
+    margin: 0px;
+    font-family: "Lato";
+    font-size: 36px;
+    line-height: 43.2px;
+    text-align: center;
+}
+.reviews-image1 {
+    width: 739px;
+    height: 33px;
+    margin-top: 10px;
 }
 .reviews-card-wrapper {
     margin-top: 49px;
@@ -254,3 +289,80 @@
 .review-card-section2-right-image {
     height: 24px;
 }
+
+/**! IPAD AIR, MINI AND SMALL TABS DO NOT TOUCH */
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .homepage-body-section2-assets-wrapper {
+        gap: 70px;
+    }
+    .homepage-body-section5 {
+        gap: 50px;
+    }
+    .homepage-body-section5-left-container {
+        gap: 10px;
+    }
+    .homepage-body-section5-left-text1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .homepage-body-section5-left-text2 {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    .homepage-body-section5-right-text {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+  }
+
+  /**! MOBILE PHONE SCREENS DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+    .homepage-body-section2-assets-wrapper {
+        gap: 70px;
+    }
+    .homepage-body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .homepage-body-section3-asset {
+        width: 323px;
+        height: 397.54px;
+    }
+    .homepage-body-section3-button {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+    .homepage-body-section4-asset {
+        width: 323px;
+        height: 397.54px;
+    }
+    .homepage-body-section5 {
+        gap: 20px;
+        margin-top: 150px;
+    }
+    .homepage-body-section5-left-container {
+        gap: 10px;
+    }
+    .homepage-body-section5-left-text1 {
+        font-size: 40px;
+        line-height: 48px;
+        white-space: nowrap;
+    }
+    .homepage-body-section5-left-text2 {
+        font-size: 24px;
+        line-height: 28.8px;
+        white-space: nowrap;
+    }
+    .homepage-body-section5-right-container {
+        width: 323px;
+    }
+    .homepage-body-section5-right-text {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    .reviews-text1 {
+        max-width: 323px;
+    }
+  }
+  
+

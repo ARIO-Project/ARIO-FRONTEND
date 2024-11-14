@@ -3,7 +3,16 @@
     margin-top: 91px;
     padding: 56px 50px;
     display: flex;
-    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .footer-left-section {
     background-color: #181820;
@@ -28,6 +37,7 @@
     line-height: 39.89px;
     color: #FFFFFF;
     max-width: 478px;
+    min-width: 268px
 }
 .footer-left-section-bottom {
     margin-top: 37px;
@@ -152,3 +162,27 @@
 .icon-source:hover {
     color: #AA85FF;
 }
+
+/**! MOBILE PHONE SCREENS DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+    .footer-left-section-bottom {
+        flex-direction: column;
+    }
+    .footer-left-section-image {
+        left: 227px;
+        top: 155px;
+    }
+    .footer-left-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-right-section-top {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-right-input-container {
+        width: 278px;
+    }
+  }
+  
+
