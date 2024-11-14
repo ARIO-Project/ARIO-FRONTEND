@@ -48,19 +48,19 @@ const LoginPage = () => {
             <SwiperSlide className="login-right-section-slide" >
               <div className="login-right-section-swiper-slide-item">
                 <h3 className="login-right-section-swiper-slide-info">Personalize clothing items with various options</h3>
-                <img src={Slider1} loading="lazy" alt="slider1" className="login-right-section-swiper-slide-image" />
+                <img src={Slider1} alt="slider1" className="login-right-section-swiper-slide-image" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="login-right-section-slide" >
               <div className="login-right-section-swiper-slide-item">
                 <h3 className="login-right-section-swiper-slide-info">Personalize clothing items with various options</h3>
-                <img src={Slider2} loading="lazy" alt="slider2" className="login-right-section-swiper-slide-image" />
+                <img src={Slider2} alt="slider2" className="login-right-section-swiper-slide-image" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="login-right-section-slide" >
               <div className="login-right-section-swiper-slide-item">
                 <h3 className="login-right-section-swiper-slide-info">Personalize clothing items with various options</h3>
-                <img src={Slider3} loading="lazy" alt="slider3" className="login-right-section-swiper-slide-image" />
+                <img src={Slider3} alt="slider3" className="login-right-section-swiper-slide-image" />
               </div>
             </SwiperSlide>
         </Swiper>

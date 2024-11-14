@@ -16,12 +16,12 @@ const Body = () => {
             <section id="homepage-body-section2" className="homepage-body-section2">
                 <div className="homepage-body-section2-text-wrapper">
                     <h1 className="homepage-body-section2-text-title">How it works</h1>
-                    <img src={HowItWorks} loading="lazy" alt="how it works" className="homepage-body-section2-image" />
+                    <img src={HowItWorks} alt="how it works" className="homepage-body-section2-image" />
                 </div>
                 <div className="homepage-body-section2-assets-wrapper">
                     {
                         howItWorksSteps.map((item, index) => (
-                            <img src={item.image} loading="lazy" alt="how it works" className="homepage-body-section2-asset" key={index} />
+                            <img src={item.image} alt="how it works" className="homepage-body-section2-asset" key={index} />
                         ))
                     }
                 </div>
@@ -30,7 +30,7 @@ const Body = () => {
                 <div className="homepage-body-section3-image-wrapper">
                     {
                         homeWorksPics.map((item, index) => (
-                            <img src={item.image} loading="lazy" alt="how it works" className="homepage-body-section3-asset" key={index} />
+                            <img src={item.image} alt="how it works" className="homepage-body-section3-asset" key={index} />
                         ))
                     }
                 </div>
@@ -42,13 +42,13 @@ const Body = () => {
             <section id="homepage-body-section4" className="homepage-body-section4">
                 <div className="homepage-body-section4-text-wrapper">
                     <h1 className="homepage-body-section4-text-title">Features</h1>
-                    <img src={HowItWorks} loading="lazy" alt="features" className="homepage-body-section4-image" />
+                    <img src={HowItWorks} alt="features" className="homepage-body-section4-image" />
                 </div>
                 <div className="homepage-body-section4-assets-container">
                     {
                         features.map((item, index) => (
                             <div className="homepage-body-section4-asset-wrapper" key={index}>
-                                <img src={item.image} loading="lazy" alt="features" className="homepage-body-section4-asset" />
+                                <img src={item.image} alt="features" className="homepage-body-section4-asset" />
                                 <h3 className="homepage-body-section4-asset-title">{item.title}</h3>
                             </div>
                         ))
