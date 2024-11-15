@@ -24,11 +24,11 @@ const LoginPage = () => {
         <p className="login-left-section-text3">Welcome!</p>
         <form onSubmit={submitLogin} className="login-form">
           <div className='login-form-input1-container' >
-            <label htmlFor="e-mail" className='login-form-input-text'>Email</label>
+            {/* <label htmlFor="e-mail" className='login-form-input-text'>Email</label> */}
             <input type="text" name='e-mail' className="login-form-input1" placeholder='Enter your e-mail address' />
           </div>
           <div className='login-form-input2-container' >
-            <label htmlFor="password" className='login-form-input-text'>Password</label>
+            {/* <label htmlFor="password" className='login-form-input-text'>Password</label> */}
             <input type={showPassword ? "text" : "password"} name='password' className="login-form-input2" placeholder='Enter your password' />
             <p onClick={() => setShowPassword(!showPassword)} className="login-show-password-icon">{showPassword ? "🙈" : "👁️"} </p>
           </div>
