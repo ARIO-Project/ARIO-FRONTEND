@@ -1,5 +1,4 @@
 .hero-section-container {
-    background-image: url('../../../assets/hero-pic1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +10,6 @@
 
 .hero-section-wrapper {
     width: 100%;
-    background-image: url('../../../assets/hero-pic-2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;   
