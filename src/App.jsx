@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { AuthProvider } from './Contexts/AuthContext';
+import { ToastContainer } from 'react-toastify';
 import HomePage from "./pages/HomePage/HomePage";
 import FeaturesPage from "./pages/FeaturesPage/FeaturesPage";
 import OurWorksPage from "./pages/OurWorksPage/OurWorksPage";
@@ -9,12 +11,15 @@ import SignUpPage from "./pages/SignUpPage/SignUpPage";
 import NavBar from "./components/HomePageComponents/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import ScrollTool from './components/ScrollTool';
-import { AuthProvider } from './Contexts/AuthContext';
+import OtpVerificationPage from './pages/OtpVerificationPage/OtpVerificationPage';
 import './App.css';
 
 const Layout = () => {
   const location = useLocation();
-  const showNavBar = location.pathname !== '/login' && location.pathname !== '/signup';
+  const onLoginPage = location.pathname === '/login';
+  const onSignUpPage = location.pathname === '/signup';
+  const onOtpPage = location.pathname === '/otp';
+  const showNavBar = !onLoginPage && !onSignUpPage && !onOtpPage;
 
   return (
     <>
@@ -27,8 +32,9 @@ const Layout = () => {
         <Route path="contact" element={<ContactUsPage />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="signup" element={<SignUpPage />} />
+        <Route path="otp" element={<OtpVerificationPage />} />
       </Routes>
-      {showNavBar && <Footer/>}
+      {showNavBar && <Footer />}
     </>
   );
 };
@@ -39,6 +45,19 @@ const App = () => {
       <BrowserRouter>
         <AuthProvider>
           <Layout />
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
+
         </AuthProvider>
       </BrowserRouter>
     </div>

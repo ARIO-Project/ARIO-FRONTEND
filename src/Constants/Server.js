@@ -1,0 +1,1 @@
+export const SERVER_URL =  "https://ario-backend-v3uq.onrender.com"

@@ -1,11 +1,9 @@
 import React from 'react'
-import useBackgroundImageOptimized from '../../../Hooks/useBackgroundImageOptimized'
 import BackgroundImage1 from '../../../assets/hero-pic1.png';
 import BackgroundImage2 from '../../../assets/hero-pic-2.png';
 import './HeroSection.css'
 
 const HeroSection = () => {
-    const [elementRef, isLoaded] = useBackgroundImageOptimized(BackgroundImage1, BackgroundImage2)
 
     return (
         <header className='hero-section-container'  >

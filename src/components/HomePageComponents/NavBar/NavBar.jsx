@@ -62,7 +62,7 @@ const NavBar = () => {
                         )
                     })
                 }
-                <Link to="/signUp" className={`${navScrolling ? "nav-button2" : "nav-button"}`}  >Sign Up</Link>
+                <Link to="/signup" className={`${navScrolling ? "nav-button2" : "nav-button"}`}  >Sign Up</Link>
             </ul>
 
             {/* Mobile Nav */}
@@ -94,7 +94,7 @@ const NavBar = () => {
                                 })
                             }
                         </ul>
-                        <Link to="/signUp" className="nav-overlay-signup-button" onClick={openNav} >Sign Up</Link>
+                        <Link to="/signup" className="nav-overlay-signup-button" onClick={openNav} >Sign Up</Link>
                     </div>
                 )
             }
