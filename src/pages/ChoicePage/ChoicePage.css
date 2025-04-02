@@ -1,0 +1,276 @@
+.choice-container {
+  background-color: #07010F;
+  min-height: 150vh;
+  padding: 150px 75px 50px;
+}
+
+.choice-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.choice-title {
+  font-family: 'Lato';
+  font-size: 48px;
+  font-weight: 700;
+  color: #F6F2FF;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.choice-subtitle {
+  font-family: 'Lato';
+  font-size: 18px;
+  color: #888888;
+  margin: 0;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.choice-item {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.choice-item:hover {
+  transform: scale(1.02);
+}
+
+.choice-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trending-section {
+  margin-top: 80px;
+}
+
+.trending-title {
+  font-family: 'Lato';
+  font-size: 36px;
+  font-weight: 700;
+  color: #F6F2FF;
+  margin-bottom: 30px;
+}
+
+.trending-grid {
+  display: flex;
+  gap: 20px;
+  height: fit-content;
+}
+
+.trending-featured {
+  flex: 0 0 45%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.trending-featured-image2 {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.trending-small-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+}
+
+.trending-small-image {
+  width: 90%;
+  height: 99%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/**! MEDIUM LAPTOP SCREENS DO NOT TOUCH */
+@media screen and (min-width: 1104px) and (max-width: 1388px) {
+  .choice-container {
+    padding: 150px 50px 50px;
+  }
+  
+  .choice-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .trending-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+  }
+}
+
+/**! SMALL LAPTOP SCREENS DO NOT TOUCH */
+@media screen and (min-width: 1025px) and (max-width: 1103px) {
+  .choice-container {
+    padding: 150px 40px 50px;
+  }
+
+  .choice-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .trending-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+}
+
+/**! BIG TABS AND IPAD PRO DO NOT TOUCH */
+@media screen and (min-width: 933px) and (max-width: 1024px) {
+  .choice-container {
+    padding: 150px 35px 50px;
+  }
+
+  .choice-title {
+    font-size: 42px;
+  }
+
+  .choice-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .trending-grid {
+    display: block;
+  }
+  .trending-small-image {
+    width: 100%;
+  }
+}
+
+/**! IPAD AIR, MINI AND SMALL TABS DO NOT TOUCH */
+@media screen and (min-width: 768px) and (max-width: 932px) {
+  .choice-container {
+    padding: 150px 30px 50px;
+  }
+
+  .choice-title {
+    font-size: 38px;
+  }
+
+  .choice-subtitle {
+    font-size: 16px;
+  }
+
+  .choice-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .trending-grid {
+    display: block;
+  }
+  .trending-small-image {
+    width: 100%;
+  }
+}
+
+/**! MOBILE PHONE SCREENS DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+  .choice-container {
+    padding: 100px 15px 30px;
+  }
+
+  .choice-title {
+    font-size: 32px;
+  }
+
+  .choice-subtitle {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .choice-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .trending-grid {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .trending-featured {
+    flex: none;
+    height: 100%;
+  }
+
+  .trending-small-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .trending-small-image {
+    aspect-ratio: 1;
+    width: 100%;
+  }
+}
+
+/**! SMALL MOBILE SCREENS DO NOT TOUCH */
+@media screen and (max-width: 375px) {
+  .choice-container {
+    padding: 120px 10px 20px;
+  }
+
+  .choice-title {
+    font-size: 28px;
+  }
+
+  .choice-subtitle {
+    font-size: 13px;
+  }
+
+  .choice-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .trending-title {
+    font-size: 24px;
+  }
+
+  .trending-featured {
+    height: 250px;
+  }
+
+  .trending-small-grid {
+    gap: 8px;
+  }
+
+  .trending-small-image {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .trending-grid {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 932px) {
+  .trending-grid {
+    height: 350px;
+  }
+  
+  .trending-small-grid {
+    gap: 15px;
+  }
+}

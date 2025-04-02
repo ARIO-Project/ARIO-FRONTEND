@@ -12,6 +12,8 @@ import NavBar from "./components/HomePageComponents/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import ScrollTool from './components/ScrollTool';
 import OtpVerificationPage from './pages/OtpVerificationPage/OtpVerificationPage';
+import ChoicePage from './pages/ChoicePage/ChoicePage';
+import CustomPricing from './pages/CustomPricing/CustomPricing';
 import './App.css';
 
 const Layout = () => {
@@ -23,7 +25,7 @@ const Layout = () => {
 
   return (
     <>
-      {showNavBar && <NavBar />}
+
       <ScrollTool />
       <Routes>
         <Route index element={<HomePage />} />
@@ -33,8 +35,10 @@ const Layout = () => {
         <Route path="login" element={<LoginPage />} />
         <Route path="signup" element={<SignUpPage />} />
         <Route path="otp" element={<OtpVerificationPage />} />
+        <Route path="choice" element={<ChoicePage />} />
+        <Route path="custom-pricing" element={<CustomPricing />} />
       </Routes>
-      {showNavBar && <Footer />}
+
     </>
   );
 };
@@ -45,18 +49,18 @@ const App = () => {
       <BrowserRouter>
         <AuthProvider>
           <Layout />
-          <ToastContainer
-            position="top-center"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="dark"
-          />
+            <ToastContainer
+              position="top-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="dark"
+            />
 
         </AuthProvider>
       </BrowserRouter>

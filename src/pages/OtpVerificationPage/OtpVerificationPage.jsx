@@ -25,7 +25,7 @@ const OtpVerificationPage = () => {
     useEffect(() => {
         if (isOtpVerified) {
             setTimeout(() => {
-                navigate("/login")
+                navigate("/choice")
             }, 7000)
         }
     }, [isOtpVerified, navigate]);
