@@ -78,6 +78,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 .homepage-body-section3-asset {
     width: 365px;
@@ -292,11 +293,74 @@
 
 /**! IPAD AIR, MINI AND SMALL TABS DO NOT TOUCH */
 @media screen and (min-width: 768px) and (max-width: 932px) {
+    .homepage-body-section2 {
+        width: 100%;
+        overflow: hidden;
+    }
     .homepage-body-section2-assets-wrapper {
         gap: 70px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
     }
+    .homepage-body-section2-asset {
+        flex-shrink: 0;
+    }
+    .homepage-body-section2-assets-wrapper::-webkit-scrollbar {
+        height: 6px;
+    }
+    .homepage-body-section2-assets-wrapper::-webkit-scrollbar-thumb {
+        background-color: rgba(97, 25, 190, 0.5);
+        border-radius: 3px;
+    }
+    
+    /* Collections section scroll styling */
+    .homepage-body-section3 {
+        width: 100%;
+        overflow: hidden;
+    }
+    .homepage-body-section3-image-wrapper {
+        gap: 70px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .homepage-body-section3-asset {
+        flex-shrink: 0;
+    }
+    .homepage-body-section3-image-wrapper::-webkit-scrollbar {
+        height: 6px;
+    }
+    .homepage-body-section3-image-wrapper::-webkit-scrollbar-thumb {
+        background-color: rgba(97, 25, 190, 0.5);
+        border-radius: 3px;
+    }
+    
     .homepage-body-section5 {
         gap: 50px;
+        background-color: #101225;
+        padding: 25px;
+        border-radius: 20px;
     }
     .homepage-body-section5-left-container {
         gap: 10px;
@@ -317,16 +381,74 @@
 
   /**! MOBILE PHONE SCREENS DO NOT TOUCH */
 @media screen and (max-width: 767px) {
-    .homepage-body-section2-assets-wrapper {
-        gap: 70px;
+    .homepage-body-section2 {
+        width: 100%;
+        overflow: hidden;
     }
+    .homepage-body-section2-assets-wrapper {
+        gap: 20px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 15px;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .homepage-body-section2-asset {
+        flex-shrink: 0;
+    }
+    .homepage-body-section2-assets-wrapper::-webkit-scrollbar {
+        height: 4px;
+    }
+    .homepage-body-section2-assets-wrapper::-webkit-scrollbar-thumb {
+        background-color: rgba(97, 25, 190, 0.5);
+        border-radius: 3px;
+    }
+    
+    /* Collections section scroll styling */
+    .homepage-body-section3 {
+        width: 100%;
+        overflow: hidden;
+    }
+    .homepage-body-section3-image-wrapper {
+        gap: 20px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 15px;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .homepage-body-section3-asset {
+        flex-shrink: 0;
+        width: 323px;
+        height: 397.54px;
+    }
+    .homepage-body-section3-image-wrapper::-webkit-scrollbar {
+        height: 4px;
+    }
+    .homepage-body-section3-image-wrapper::-webkit-scrollbar-thumb {
+        background-color: rgba(97, 25, 190, 0.5);
+        border-radius: 3px;
+    }
+    
     .homepage-body {
         padding-left: 20px;
         padding-right: 20px;
-    }
-    .homepage-body-section3-asset {
-        width: 323px;
-        height: 397.54px;
     }
     .homepage-body-section3-button {
         font-size: 14px;
@@ -339,6 +461,9 @@
     .homepage-body-section5 {
         gap: 20px;
         margin-top: 150px;
+        background-color: #101225;
+        padding: 25px;
+        border-radius: 20px;
     }
     .homepage-body-section5-left-container {
         gap: 10px;

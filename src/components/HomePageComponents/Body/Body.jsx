@@ -27,6 +27,10 @@ const Body = () => {
                 </div>
             </section>
             <section id="homepage-body-section3" className="homepage-body-section3">
+                <div className="homepage-body-section2-text-wrapper">
+                    <h1 className="homepage-body-section2-text-title">Collections</h1>
+                    <img src={HowItWorks} alt="how it works" className="homepage-body-section2-image" />
+                </div>
                 <div className="homepage-body-section3-image-wrapper">
                     {
                         homeWorksPics.map((item, index) => (
