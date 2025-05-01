@@ -395,13 +395,13 @@
         -webkit-overflow-scrolling: touch;
         width: 100%;
         max-width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        
         box-sizing: border-box;
         margin-left: 0;
         margin-right: 0;
     }
     .homepage-body-section2-asset {
+        width: 283px;
         flex-shrink: 0;
     }
     .homepage-body-section2-assets-wrapper::-webkit-scrollbar {
@@ -427,15 +427,13 @@
         -webkit-overflow-scrolling: touch;
         width: 100%;
         max-width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
         box-sizing: border-box;
         margin-left: 0;
         margin-right: 0;
     }
     .homepage-body-section3-asset {
         flex-shrink: 0;
-        width: 323px;
+        width: 273px;
         height: 397.54px;
     }
     .homepage-body-section3-image-wrapper::-webkit-scrollbar {
